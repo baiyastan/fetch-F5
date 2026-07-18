@@ -3,7 +3,8 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
-
+import Detail from "./pages/Detail";
+import Contact from "./pages/Contact";
 
 const myRouter = createBrowserRouter([
     {
@@ -21,6 +22,14 @@ const myRouter = createBrowserRouter([
             {
                 path: "profile",
                 element: <Profile />
+            },
+            {
+                path: "detail/:id",
+                element: <Detail />
+            },
+            {
+                path: "contact",
+                element: <Contact />
             }
         ]
     }
